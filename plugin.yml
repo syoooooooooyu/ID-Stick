@@ -1,0 +1,21 @@
+name: ID-Stick
+main: Meru\ID_Stick\Main
+version: 1.0.0
+api:
+  - 3.0.0
+  - 4.0.0
+load: POSTWORLD
+website: https://github.com/Meru92/ID-Stick
+
+commands:
+  id_stick:
+    aliases:
+      - is
+      - stick
+    description: IDを確認できる棒を貴方のインベントリにスポーンさせます。
+    permission: ID-Stick.command.id_stick
+    permission-message: "あなたはopではないため次のコマンドは使えません。 - /id_stick"
+
+permissions:
+  ID-Stick.command.id_stick:
+    default: op
