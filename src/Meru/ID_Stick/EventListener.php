@@ -7,15 +7,6 @@ use pocketmine\event\Listener;
 
 class EventListener implements Listener {
 
-    private $Main;
-
-    const prefix = '[ID-Stick]';
-
-    public function __construct(Main $Main)
-    {
-        $this->Main = $Main;
-    }
-
     public function onInteract(PlayerInteractEvent $interactEvent)
     {
         $player = $interactEvent->getPlayer();
